@@ -16,7 +16,7 @@ build/
 .vscode/
 
 # ENV files
-*.env*
+# *.env*
 
 # Other non-production dotfiles
 .eslintrc
