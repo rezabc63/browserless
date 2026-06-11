@@ -1,5 +1,5 @@
-# Ignore non-chrome routes
-src/routes/chromium
+# Ignore non-chromium routes
+src/routes/chrome
 src/routes/firefox
 src/routes/webkit
 src/routes/edge
@@ -16,7 +16,7 @@ build/
 .vscode/
 
 # ENV files
-# *.env*
+*.env*
 
 # Other non-production dotfiles
 .eslintrc
