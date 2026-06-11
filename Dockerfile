@@ -27,7 +27,7 @@ RUN npm prune --omit=dev
 
 # NOTE it's important to not use npx playwright-core here since it'll likely install
 # a more recent version than we potentially have in our own package.json
-RUN ./node_modules/playwright-core/cli.js install --with-deps chromium && \
+RUN ./node_modules/playwright-core/cli.js install --with-deps chromium chrome webkit firefox && \
     apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 # Pull built artifacts from builder. `static/` and `extensions/` are
